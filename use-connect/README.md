@@ -2,11 +2,11 @@
 
 ```
 import React from 'react'
-import useContext from '../index'
+import useConnect from '../useConnect'
 import PokemonList from '../components/PokemonList'
 
 const PokemonListContext = () => {
-  const props = useContext({ pokemons: ['pokemons'], cities: ['cities'] })
+  const props = useConnect({ pokemons: ['pokemons'], cities: ['cities'] })
   return <PokemonList {...props} />
 }
 
@@ -15,12 +15,12 @@ export default PokemonListContext
 
 ```
 import React from 'react'
-import useContext from '../index'
+import useConnect from '../useConnect'
 import AddPokemon from '../components/AddPokemon'
 import { addPokemon } from '../actions'
 
 const AddPokemonContext = () => {
-  const props = useContext({}, { addPokemon })
+  const props = useConnect({}, { addPokemon })
   return <AddPokemon {...props} />
 }
 
