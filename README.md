@@ -93,8 +93,3 @@ useObservable, useEventCallback.
 ### useScrollEnds
 
 [useScrollEnds](./use-scroll-ends)
-
-### useConnect
-
-[useConnect](./use-connect)
-
